@@ -80,8 +80,10 @@ def process_zinc():
 if __name__ == '__main__':
     if not os.path.exists('./data'):
         os.mkdir('./data')
-    for name in ['MNIST', 'CIFAR10', 'PATTERN', 'CLUSTER']:
-        print(f'Processing {name}...')
-        process(name)
-    print(f'Processing ZINC...')    
-    process_zinc()
+    # for name in ['MNIST', 'CIFAR10', 'PATTERN', 'CLUSTER']:
+    #     print(f'Processing {name}...')
+    #     process(name)
+    # print(f'Processing ZINC...')    
+    # process_zinc()
+    print(f'Processing MNIST...')
+    process('MNIST')
